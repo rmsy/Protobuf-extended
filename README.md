@@ -1,6 +1,22 @@
 Protocol Buffers - Google's data interchange format
+
 Copyright 2008 Google Inc.
+
 http://code.google.com/apis/protocolbuffers/
+
+=======================
+# What is Protobuf extended?
+Protobuf extended is a modification to Protobuf to add multiple convenience methods to Protobuf's [Java API](https://github.com/rmsy/Protobuf-extended/blob/master/java).
+
+# What's new?
+This is a running list of modifications to Protobuf's Java API (in order of inclusion):
+
+1. **```ExtensionRegistry.getExtensions()```**: A method to get all of an ExtensionRegistry's ExtensionInfo objects.
+
+# Why is all of protobuf included, instead of just the Java API?
+Convenience. Additionally, this may possibly extend beyond the Java API, depending on what's needed, and I wouldn't want to change the repository format just to accommodate.
+
+=======================
 
 C++ Installation - Unix
 =======================
@@ -102,7 +118,7 @@ For advanced usage information on configure and make, see INSTALL.txt.
 
     ./configure LDFLAGS=-L$PWD/src/solaris
 
-  See src/solaris/libstdc++.la for more info on this bug.
+  See [src/solaris/libstdc++.la](https://github.com/rmsy/Protobuf-extended/blob/master/src/solaris/libstdc++.la) for more info on this bug.
 
 ** Note for HP C++ Tru64 users **
 
@@ -115,7 +131,7 @@ For advanced usage information on configure and make, see INSTALL.txt.
 C++ Installation - Windows
 ==========================
 
-If you are using Microsoft Visual C++, see vsprojects/readme.txt.
+If you are using Microsoft Visual C++, see [vsprojects/readme.txt](https://github.com/rmsy/Protobuf-extended/blob/master/vsprojects/readme.txt).
 
 If you are using Cygwin or MinGW, follow the Unix installation
 instructions, above.
@@ -132,7 +148,7 @@ immediately on startup of your app.  Still, you may want to consider
 using static linkage.  You can configure this package to install
 static libraries only using:
 
-  ./configure --disable-shared
+    ./configure --disable-shared
 
 Java and Python Installation
 ============================
